@@ -10,7 +10,6 @@
 - [ ] JavaScript 异步与同步
 - [x] JavaScript 变量类型以及参数传递
 - [ ] webGL 简单学习及应用
-- [x] Git 技巧（cherry-pick reflog）
 - [ ] 递归思想
 - [ ] flexible.js
 - [ ] 立即执行函数
