@@ -44,13 +44,10 @@ Function.prototype.myCall = function(obj) {
 
 ```javascript
 Function.prototype.myCall = function(obj) {
-  let object = obj || global; // node环境中的全局对象
+  let object = obj || window;
   object.fn = this;
-  var args = [];
-  for (let i = 1, len = arguments.length; i < len; i++) {
-    args.push("arguments[" + i + "]");
-  }
-  let result = eval("object.fn(" + args + ")");
+  var args = [...arguments].slice(1);
+  let result = object.fn(...args);
   delete object.fn;
   return result;
 };
@@ -66,11 +63,11 @@ Function.prototype.myCall = function(obj) {
    function fn1(a) {
      console.log(a);
    }
-
+   
    function fn2() {
      console.log("*");
    }
-
+   
    fn1.myCall(fn2, "HelloWorld!"); //输出HelloWorld!
    ```
 
@@ -87,7 +84,7 @@ Function.prototype.myCall = function(obj) {
    function fn2() {
      console.log(2);
    }
-
+   
    fn1.myCall.myCall(fn2); //输出2
    ```
 
@@ -110,7 +107,7 @@ Function.prototype.myCall = function(obj) {
      - 先将 fn2 赋给临时变量 object。
      - this 所指向的对象就是一个函数对象：Function.prototype.myCall()。所以赋给 object.fn 临时属性指向的就是 Function.prototype.myCall()方法。
      - 由于 arguments 长度为 1，所以直接执行 object.fn()方法，也就是 object.myCall()，**也就是 fn2.myCall()**。
-     - fn2.myCall()实际上执行的是 global.fn2()，具体执行过程就不再熬述了，故输出了 2，没有返回值。
+     - fn2.myCall()实际上执行的是 window.fn2()，具体执行过程就不再熬述了，故输出了 2，没有返回值。
      - 销毁临时属性 fn。
      - 函数执行完毕。
 
