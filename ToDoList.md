@@ -1,17 +1,48 @@
 # ToDoList
 
-- [x] CSS 规范化书写（BEM+模块化）
-- [x] Stylus 学习及经验总结
-- [x] Range 接口+Selection 对象=富文本编辑器
+- [ ] CSS 规范化书写（BEM+模块化）
+- [ ] Stylus 学习及经验总结
+- [ ] Range 接口+Selection 对象=富文本编辑器
 - [x] JavaScript 对 function 的深入理解
 - [ ] 炫酷文字时钟
 - [ ] ES6 语法学习
 - [ ] weui 源码分析
 - [ ] JavaScript 异步与同步
-- [x] JavaScript 变量类型以及参数传递
+- [ ] JavaScript 变量类型以及参数传递
 - [ ] webGL 简单学习及应用
 - [ ] 递归思想
 - [ ] flexible.js
 - [ ] 立即执行函数
 - [ ] Ajax
 - [ ] SVG 路径动画
+- [ ] Navigator 对象相机调用
+- [ ] 下载功能实现
+- [ ] 鼠标事件以及preventDefault()等事件的理解
+- [ ] Three.js
+- [ ] cocos2d
+- [ ] canvas
+- [ ] AlloyFinger-master
+- [ ] node fs
+- [ ] 懒加载
+- [ ] HTML5 Dataset
+- [ ] 防抖截留
+- [ ] @media screen and (orientation: portrait) 
+- [ ] @media screen and (orientation: landscape)
+- [ ] mix-blend-mode: overlay;
+- [ ] animation-fill-mode: both;
+- [ ] document.documentElement
+- [ ] 小程序
+- [ ] MVC与MVVM
+- [ ] Node Http
+- [ ] LRU
+- [ ] Mustache 语法
+- [ ] 闭包
+- [ ] Javascript设计模式
+- [ ] 小程序生命周期
+- [ ] 策略模式
+- [ ] 模板渲染
+- [ ] 观察者模式
+- [ ] MVVM模式实现（简易Vue）
+- [ ] tween.js源码分析
+- [ ] 正则表达式
+- [ ] 

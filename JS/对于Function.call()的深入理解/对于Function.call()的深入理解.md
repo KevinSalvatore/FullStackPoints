@@ -46,8 +46,7 @@ Function.prototype.myCall = function(obj) {
 Function.prototype.myCall = function(obj) {
   let object = obj || window;
   object.fn = this;
-  var args = [...arguments].slice(1);
-  let result = object.fn(...args);
+  let result = object.fn(...arguments.slice(1));
   delete object.fn;
   return result;
 };
