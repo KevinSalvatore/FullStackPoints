@@ -38,3 +38,18 @@
 - [x] 模板渲染
 - [x] 观察者模式
 - [ ] 正则表达式
+- [ ] 小程序组件
+- [ ] 小程序云开发
+- [ ] json与js对象
+- [ ] h5 url API
+- [ ] lodash.js
+- [ ] commonjs
+- [ ] cax小程序
+- [ ] export，import ，export default
+- [ ] reduce()
+- [ ] 函数参数默认值可以实现报错功能
+- [ ] HTML Entity
+- [ ] 闭包
+- [ ] 科里化
+- [ ] Promise简易实现
+- [ ] bind()的实现（绑定新构造的函数的this参数）
